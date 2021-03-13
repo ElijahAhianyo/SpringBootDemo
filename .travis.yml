@@ -1,10 +1,13 @@
 #install: gradle wrapper --gradle-version 4.2
 
 language: java
+
+before_script:
+  - chmod a+x gradlew
+
 jdk:
   - openjdk15
 
-#before_script:
-#  - chmod a+x gradlew
+
 #
 #sccript: ./gradlew build
